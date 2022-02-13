@@ -1,0 +1,13 @@
+package boletinJUNIT2;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.platform.suite.api.*;
+import static org.hamcrest.MatcherAssert.*;
+
+import org.hamcrest.CoreMatchers;
+@SuppressWarnings("unused")
+@Suite
+@SelectClasses( { BoaTest.class, OperadorAritmeticoTest.class, PilaTest.class, SubscripcionTest.class, AccountTest.class } )
+@DisplayName("Suite que ejecuta todos los test")
+public class TestSuiteALL extends CoreMatchers{
+
+}
